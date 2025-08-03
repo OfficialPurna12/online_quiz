@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Game || Developed By Purna Bhaadur Khatri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/about.JPG">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" >QuizMaster</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#about">About</a></li>
+                
+                <li><a href="#ourteam">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Welcome Section -->
+            <section class="welcome-section" id="home">
+                <h1 class="welcome-title">Online Quiz Platform</h1>
+                <div class="instructions">
+                    <h2>स्वागत छ हाम्रो अनलाइन परीक्षामा</h2>
+                    <p>कृपया ध्यानपूर्वक सबै निर्देशनहरू पालना गर्दै इमान्दारीपूर्वक उत्तर दिनुहोस्</p>
+                    <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+                        <li>सबै प्रश्नहरू अनिवार्य छन्</li>
+                        <li>समय सीमा भित्र उत्तर दिनुहोस्</li>
+                        <li>एक पटक submit गरेपछि परिवर्तन गर्न सकिने छैन</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Quiz Section -->
+            <section class="quiz-container" id="quiz">
+                <iframe 
+                    class="quiz-iframe"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd1-Y495Sn9QuBFabCWawQHwq_EOLRaJ3l_W12x2IEw4m92MA/viewform?embedded=true" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                    Loading Quiz<span class="loading"></span>
+                </iframe>
+            </section>
+        </div>
+    </main>
+
+    <!-- About Section -->
+     <div class="about-container" id="about">
+        <div class="header">
+            <h1>About <span class="me">Me</span></h1>
+            <p>Passionate about creating digital experiences that inspire, engage, and convert. With over 3 years of experience in design and development.</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="images/about.JPG" alt="Profile Picture" class="profile-pic">
+                    <div class="experience-badge">3+</div>
+                </div>
+
+                <div class="journey-card">
+                    <h3>My Journey</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot purple"></div>
+                        <div class="timeline-content">
+                            <h4>2024 - Present</h4>
+                            <p>UI/UX Designer </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot blue"></div>
+                        <div class="timeline-content">
+                            <h4>2022 - 2024</h4>
+                            <p>Full-Stack Developer & Designer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot green"></div>
+                        <div class="timeline-content">
+                            <h4>2019 - 2022</h4>
+                            <p>Graphic Designer & SEO Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3>My <span class="skills">Skills</span></h3>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Graphic Design</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress graphic" style="--width: 95%; width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Web Development</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress web" style="--width: 90%; width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">SEO Optimization</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress seo" style="--width: 85%; width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Digital Marketing</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress marketing" style="--width: 88%; width: 88%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">UI/UX Design</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress ui" style="--width: 92%; width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number projects">50+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number clients">25+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+        </div>
+    </div>
+<br>
+
+<div class="team-container" id="ourteam">
+        <div class="team-header">
+            <h1><span class="our">Our</span> <span class="team">Team</span></h1>
+            <p>Meet the passionate professionals behind our success. Each member brings unique expertise and creativity to deliver exceptional results.</p>
+        </div>
+
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="images/purna.JPG" alt="John Smith" class="member-photo">
+                    <div class="card-overlay">
+                       
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="member-name">Purna Bahadur Khatri</h3>
+                    <p class="member-position">Lead Developer</p>
+                    <p class="member-description">Expert in full-stack development with 3+ years of experience. Passionate about creating scalable solutions and mentoring junior developers.</p>
+                    <div class="skills-tags">
+                        <span class="skill-tag">HTML,CSS & JS</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PHP Laravel</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Statistics -->
+        <div class="team-stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>6</h3>
+                    <p>Team Members</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+     <div class="floating-elements">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    <div class="contact-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your next project? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            
+            <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div class="info-content">
+                    <h3>Email Address</h3>
+                    <p>purnakhatri630@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div class="info-content">
+                    <h3>Phone Number</h3>
+                    <p>+977 9829839069</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-content">
+                    <h3>Office Address</h3>
+                    <p>Ghorahi <br>Dang-Nepal</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">🕒</div>
+                <div class="info-content">
+                    <h3>Working Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/purna.with.coding" target="_blank" class="social-link" title="Facebook">📘</a>
+                <a href="https://x.com/purnakhatri04" target="_blank" class="social-link" title="Twitter">🐦</a>
+                <a href="https://www.linkedin.com/in/pbkhatri/" target="_blank" class="social-link" title="LinkedIn">💼</a>
+                <a href="https://www.instagram.com/purn.akhatri/" target="_blank" class="social-link" title="Instagram">📷</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container" id="contact">
+            <h2 class="section-title">Send Message</h2>
+            <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+            
+            <div class="success-message" id="successMessage">
+                Thank you! Your message has been sent successfully. We'll get back to you soon! ✨
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="firstName" placeholder=" " required>
+                        <label for="firstName" class="form-label">First Name</label>
+                        <div class="error-message" id="firstNameError">Please enter your first name</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="lastName" placeholder=" " required>
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <div class="error-message" id="lastNameError">Please enter your last name</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="email" placeholder=" " required>
+                        <label for="email" class="form-label">Email Address</label>
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" id="phone" placeholder=" ">
+                        <label for="phone" class="form-label">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <select class="form-select" id="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="project">New Project</option>
+                        <option value="support">Support</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="subject" class="form-label">Subject</label>
+                    <div class="error-message" id="subjectError">Please select a subject</div>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-textarea" id="message" placeholder=" " required></textarea>
+                    <label for="message" class="form-label">Your Message</label>
+                    <div class="error-message" id="messageError">Please enter your message</div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message
+                </button>
+
+                <p class="form-note">
+                    We respect your privacy. Your information will never be shared with third parties.
+                </p>
+            </form>
+        </div>
+    </div>
+<br><br>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About QuizMaster</h3>
+                <p>An innovative online quiz platform designed to provide engaging and interactive learning experiences for students and professionals.</p>
+                <div class="social-links">
+                     <a href="https://www.facebook.com/purna.with.coding" target="_blank" class="social-link" title="Facebook">📘</a>
+                <a href="https://x.com/purnakhatri04" target="_blank" class="social-link" title="Twitter">🐦</a>
+                <a href="https://www.linkedin.com/in/pbkhatri/" target="_blank" class="social-link" title="LinkedIn">💼</a>
+                <a href="https://www.instagram.com/purn.akhatri/" target="_blank" class="social-link" title="Instagram">📷</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#quiz">Take Quiz</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 purnakhatri630@gmail.com</p>
+                <p>📞 +977 9829839069</p>
+                <p>📍 Kathmandu, Nepal</p>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p><a href="#">Help Center</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+         
+        <div class="footer-bottom">
+            <p>&copy; 2025 Online Quiz Platform. Developed by Purna Bhaadur Khatri. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js">
+        
+    </script>
+</body>
+</html>
